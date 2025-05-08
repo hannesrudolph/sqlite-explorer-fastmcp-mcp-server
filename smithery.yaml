@@ -1,0 +1,17 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - sqliteDbPath
+    properties:
+      sqliteDbPath:
+        type: string
+        description: The full path to the SQLite database file.
+  commandFunction:
+    # A function that produces the CLI command to start the MCP on stdio.
+    |-
+    config => ({ command: 'uvicorn', args: ['sqlite_explorer:app', '--host', '0.0.0.0', '--port', '8000'], env: { SQLITE_DB_PATH: config.sqliteDbPath } })

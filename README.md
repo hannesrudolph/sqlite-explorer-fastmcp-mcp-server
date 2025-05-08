@@ -2,6 +2,8 @@
 
 # SQLite Explorer MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@hannesrudolph/sqlite-explorer-fastmcp-mcp-server)](https://smithery.ai/server/@hannesrudolph/sqlite-explorer-fastmcp-mcp-server)
+
 An MCP server that provides safe, read-only access to SQLite databases through Model Context Protocol (MCP). This server is built with the FastMCP framework, which enables LLMs to explore and query SQLite databases with built-in safety features and query validation.
 
 ## 📋 System Requirements
@@ -70,6 +72,14 @@ cd sqlite-explorer-fastmcp-mcp-server
 You can install this MCP server in either Claude Desktop or the Cline VSCode plugin. Choose the option that best suits your needs.
 
 ### Option 1: Install for Claude Desktop
+
+#### Installing via Smithery
+
+To install SQLite Explorer for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@hannesrudolph/sqlite-explorer-fastmcp-mcp-server):
+
+```bash
+npx -y @smithery/cli install @hannesrudolph/sqlite-explorer-fastmcp-mcp-server --client claude
+```
 
 Install using FastMCP:
 
