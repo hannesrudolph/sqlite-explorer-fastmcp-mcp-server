@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/hannesrudolph-sqlite-explorer-fastmcp-mcp-server-badge.png)](https://mseep.ai/app/hannesrudolph-sqlite-explorer-fastmcp-mcp-server)
+
 # SQLite Explorer MCP Server
 
 An MCP server that provides safe, read-only access to SQLite databases through Model Context Protocol (MCP). This server is built with the FastMCP framework, which enables LLMs to explore and query SQLite databases with built-in safety features and query validation.
